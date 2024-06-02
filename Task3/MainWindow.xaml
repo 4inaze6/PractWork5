@@ -1,0 +1,16 @@
+﻿<Window x:Class="Task3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Цена:" Height="50" Margin="260,142,470,242" RenderTransformOrigin="1.022,0.367"/>
+        <TextBox x:Name="PriceTextBox" Height="50" Width="150" Margin="350,142,300,242" TextChanged="PriceTextBox_TextChanged"/>
+        <Label x:Name="CostLabel" Margin="350,242,300,142"/>
+        <Label Content="Итого:" Height="50" Margin="260,242,470,142"/>
+        <local:GoodsCounter x:Name="GoodsCounter" MaxValue="5" HorizontalAlignment="Center" VerticalAlignment="Center" ValueChanged="GoodsCounter_ValueChanged"/>
+    </Grid>
+</Window>
