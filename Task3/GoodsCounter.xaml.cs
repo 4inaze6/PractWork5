@@ -54,8 +54,7 @@ namespace Task3
                 Value--;
                 if (Value == 0)
                     MinusButton.IsEnabled = false;
-                if (Value < MaxValue)
-                    PlusButton.IsEnabled = true;
+                PlusButton.IsEnabled = true;
                 DigitTextBox.Text = Value.ToString();
                 ValueChanged?.Invoke(this, new RoutedEventArgs());
             }
